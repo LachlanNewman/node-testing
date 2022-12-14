@@ -1,3 +1,11 @@
+# Instructions
+## Prerequisites
+1. Create a bucket is s3 
+2. Create `.env file` with values
+
+## Running
+`yarn tsnd -n <Number of Images> -s <Average Size in bytes for each image>`
+
 # Findings
 The Below are a list of finding testing the possible size of user defined metadata to s3 by increasing the number of images and the average size of each image gradually.
 
