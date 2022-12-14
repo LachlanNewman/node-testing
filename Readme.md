@@ -1,3 +1,10 @@
+# Findings
+The Below are a list of finding testing the possible size of user defined metadata to s3 by increasing the number of images and the average size of each image gradually.
+
+The offsets for each image are **first coverted to hex and then cocatenated into a comma seperated string**.
+
+It looks like we start to reach the **limit once more than 300 images are present**. increasing the average size of each image has less affect.
+
 | **Number of Images** | **Average Bytes Per Image** | **Number Bytes in Metadata Offsets (Hex)** | **Successfully Posted to S3**| 
 | - | - | - | - |
 | 50| 50000 | 328 | true |
